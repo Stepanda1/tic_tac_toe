@@ -111,3 +111,64 @@ body {
 .btnnewgame:hover {
     background: #3a000a;
 }
+
+@media (max-width: 600px) {
+    .field {
+        width: 90vw;
+        height: 90vw;
+    }
+    .item {
+        width: 24vw;
+        height: 24vw;
+        margin: 5px;
+    }
+    .cross:after,.cross:before {
+        left: 12.5vw;
+        top: -1.5vw;
+        height: 30vw;
+        width: 2.5vw;
+    }
+    .zero:after {
+        top: 1.5vw;
+        border: blue solid 2vw;
+        width: 20vw; 
+        height: 20vw;
+    }
+}
+@media (max-width: 500px) {
+    .item {
+        margin: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+    .field {
+        width: 95vw;
+        height: 95vw;
+    }
+    .item {
+        margin: 2px;
+    }
+    .cross:after,.cross:before {
+        left: 13.5vw;
+        top: 0vw;
+        height: 30vw;
+        width: 2.5vw;
+    }
+    .zero:after {
+        top: 2.2vw;
+        border: blue solid 2.5vw;
+        width: 20vw; 
+        height: 20vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .field {
+        width: 100vw;
+        height: 100vw;
+    }
+    .item {
+        margin: 2px;
+    }
+}
