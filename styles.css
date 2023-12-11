@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    bottom: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.position {
+    padding: 25px;
+}
+
+#spanPosition {
+    color: darkturquoise;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.field {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background: gray;
+    border-radius: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    background: #000;
+    width: 170px;
+    border-radius: 24px;
+    height: 170px;
+    margin: 5px;
+    color: white;
+    justify-content: center;
+}
+
+.cross:before, .cross:after {
+    position: absolute;
+    left: 87px;
+    top: -15px;
+    content: ' ';
+    height: 220px;
+    width: 15px;
+    background-color: red;
+}
+
+.cross:before {
+    transform: rotate(45deg);
+}
+
+.cross:after {
+    transform: rotate(-45deg);
+}
+
+.zero:after {
+    position: absolute;
+    top: 14px;
+    content: ' ';
+    border: blue solid 14px;
+    width: 135px; 
+    height: 135px;
+    border-radius: 50%;
+}
+
+.wincolor {
+    background-color: rgb(131, 255, 131);
+}
+
+.victory {
+    margin-top: 24px;
+    display: none;
+    flex-direction: column;
+}
+
+.textwin {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+#spanWin {
+    font-size: 24px;
+    color: darkgreen;
+    font-weight: 700;
+}
+
+.btnnewgame {
+    padding: 12px;
+    background-color: rgb(122, 22, 86);
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btnnewgame:hover {
+    background: #3a000a;
+}
